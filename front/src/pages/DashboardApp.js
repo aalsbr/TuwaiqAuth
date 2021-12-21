@@ -7,6 +7,7 @@ import {
   // AppBugReports,
   AppItemOrders,
   AppWeeklySales,
+  AppCurrentVisits,
  
 } from '../components/_dashboard/app';
 
@@ -30,11 +31,13 @@ export default function DashboardApp() {
           <Grid item xs={12} sm={6} md={3}>
             <AppItemOrders />
           </Grid>
-       
       
-
        
         </Grid>
+        <br/>
+        <Grid item xs={12} sm={6} md={3}>
+        <AppCurrentVisits />
+      </Grid>
       </Container>
     </Page>
   );

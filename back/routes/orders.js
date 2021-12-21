@@ -66,7 +66,7 @@ router.get("/",async (req,res)=>{
 
 
 /*---------------------------------------------------------------------------------------------*/
-  //get number of done orders 
+  //get number of done  and pending orders
   router.get("/numberdone",async (req,res)=>{
       
 
@@ -78,7 +78,8 @@ router.get("/",async (req,res)=>{
       if(id){
 
         const post = await  Orders.find({status:'done'});
-        return  res.json({ status: "ok", data: post.length });
+        const pen = await  Orders.find({status:'pending'});
+        return  res.json({ status: "ok", data: post.length ,pending:pen.length});
         
           }
           
