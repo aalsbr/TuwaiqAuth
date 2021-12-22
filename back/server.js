@@ -10,8 +10,7 @@ mongoose.connect(
   "mongodb+srv://123:123@cluster0.ieg5j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 );
 // Middlewares
-app.use(cors());
-app.options('*', cors()) 
+
 app.use(express.json());
 
 // Routers
