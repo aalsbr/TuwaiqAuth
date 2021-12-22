@@ -10,7 +10,7 @@ mongoose.connect(
   "mongodb+srv://123:123@cluster0.ieg5j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 );
 // Middlewares
-app.use(cors({ origin: "http://137.184.157.109:3000" }));
+app.use(cors());
 app.use(express.json());
 
 // Routers
