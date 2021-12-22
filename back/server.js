@@ -19,5 +19,4 @@ app.use("/", posts);
 app.use("/orders",orders)
 
 app.listen(port, () => {
-  console.log(`Express app listening at http://localhost:${port}`);
 });

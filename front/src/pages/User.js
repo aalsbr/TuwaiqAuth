@@ -68,7 +68,7 @@ export default function User() {
       password:password
     }
     axios
-    .post("http://localhost:8080/newuser", obj,{ 
+    .post("http://137.184.157.109:8080/newuser", obj,{ 
        headers: {
       "x-access-token": localStorage.getItem("token"),
     }
@@ -83,7 +83,7 @@ export default function User() {
 
   const getdata  = ()=>{
 
-    axios.get("http://localhost:8080/getall").then((res) => {
+    axios.get("http://137.184.157.109:8080/getall").then((res) => {
   
     if(res.data.data){
     console.log(res.data.data)

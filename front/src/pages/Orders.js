@@ -62,7 +62,7 @@ export default function Orders() {
 
   const getdata  = ()=>{
 
-    axios.get("http://localhost:8080/orders",{
+    axios.get("http://137.184.157.109:8080/orders",{
       headers: {
         "x-access-token": localStorage.getItem("token"),
       }

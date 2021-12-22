@@ -67,7 +67,7 @@ export default function Settings() {
           }; 
     }
     axios
-      .put("http://localhost:8080/changeone", obj, {
+      .put("http://137.184.157.109:8080/changeone", obj, {
         headers: {
           "x-access-token": localStorage.getItem("token"),
         },
@@ -83,7 +83,7 @@ export default function Settings() {
   const getdata = () => {
    
     axios
-    .get(`http://localhost:8080/getone`, {
+    .get(`http://137.184.157.109:8080/getone`, {
       headers: {
         "x-access-token": localStorage.getItem("token"),
       },
