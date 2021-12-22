@@ -43,7 +43,7 @@ export default function AppItemOrders() {
   
   const getdata  = ()=>{
 
-    axios.get("http://localhost:8080/orders/numberoforder",{
+    axios.get("http://137.184.157.109:8080/orders/numberoforder",{
       headers: {
         "x-access-token": localStorage.getItem("token"),
       }

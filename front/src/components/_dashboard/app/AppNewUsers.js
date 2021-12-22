@@ -42,7 +42,7 @@ export default function AppNewUsers() {
   
   const getdata  = ()=>{
 
-    axios.get("http://localhost:8080/numberofusers",{
+    axios.get("http://137.184.157.109:8080/numberofusers",{
       headers: {
         "x-access-token": localStorage.getItem("token"),
       }

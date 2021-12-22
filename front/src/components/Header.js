@@ -7,6 +7,8 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { useNavigate } from "react-router";
 
+import logo from '../assets/img/logo.png'
+
 
 const Header = () => {
   const nav= useNavigate()
@@ -29,7 +31,7 @@ const Header = () => {
             onClick={scrollTo("home")}
             aria-label="Logo"
           >
-            LOGO
+          <img src={logo} width={100} height={100}/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span />

@@ -45,7 +45,7 @@ export default function LoginComp() {
 
       
     console.log(obj)
-    axios.post("http://localhost:8080/login",obj).then((res) => {
+    axios.post("http://137.184.157.109:8080/login",obj).then((res) => {
 
         if(res.data.data){
           window.top.postMessage({data:"ok",name:res.data.data}, '*')    

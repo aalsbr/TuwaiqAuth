@@ -11,6 +11,8 @@ import LoginComp from 'src/components/authentication/login/LoginComp';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import axios from 'axios';
+import logo from '../assets/img/logo.png'
+
 
 // ----------------------------------------------------------------------
 
@@ -43,7 +45,7 @@ export default function LoginPublic() {
 
   useEffect(()=>{
     axios
-    .get("http://localhost:8080/orders/getallcompany")
+    .get("http://137.184.157.109:8080/orders/getallcompany")
     .then((response) => {
       let obj =   response.data.data.find(o => o.company === id);
       if(obj) setPage(false)
@@ -70,6 +72,7 @@ export default function LoginPublic() {
         <ContentStyle>
           <Stack sx={{ mb: 5 }}>
             <Typography variant="h4" gutterBottom>
+            <img src={logo} width={100} height={100} />
               Sign in to Using TuwaiqAuth
             </Typography>
             <Typography sx={{ color: 'text.secondary' }}>Enter your details below.</Typography>

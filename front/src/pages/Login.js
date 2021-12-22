@@ -6,6 +6,8 @@ import {  Stack,  Container, Typography } from '@mui/material';
 import Page from '../components/Page';
 import { LoginForm } from '../components/authentication/login';
 
+import logo from '../assets/img/logo.png'
+
 // ----------------------------------------------------------------------
 
 const RootStyle = styled(Page)(({ theme }) => ({
@@ -38,6 +40,7 @@ export default function Login() {
         <ContentStyle>
           <Stack sx={{ mb: 5 }}>
             <Typography variant="h4" gutterBottom>
+            <img src={logo} width={100} height={100} />
               Sign in to TuwaiqAuth
             </Typography>
             <Typography sx={{ color: 'text.secondary' }}>Enter your details below.</Typography>

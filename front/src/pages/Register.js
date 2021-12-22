@@ -7,6 +7,8 @@ import { Box,  Link, Container, Typography } from '@mui/material';
 // components
 import Page from '../components/Page';
 import { RegisterForm } from '../components/authentication/register';
+import logo from '../assets/img/logo.png'
+
 
 // ----------------------------------------------------------------------
 
@@ -32,7 +34,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 
 export default function Register() {
   return (
-    <RootStyle title="Register | Minimal-UI">
+    <RootStyle title="Register | TuwaiqAuth">
    
 
      
@@ -42,6 +44,8 @@ export default function Register() {
         <ContentStyle>
           <Box sx={{ mb: 5 }}>
             <Typography variant="h4" gutterBottom>
+            <img src={logo} width={100} height={100} />
+
             Register in  TuwaiqAuth
             </Typography>
           </Box>
