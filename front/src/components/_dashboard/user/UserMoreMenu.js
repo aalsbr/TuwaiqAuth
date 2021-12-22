@@ -48,7 +48,7 @@ export default function UserMoreMenu({id, name,email,role,getdata}) {
      };
   }
   axios
-    .put(`http://137.184.157.109:8080/updateinfo/${id}`, obj, {
+    .put(`/updateinfo/${id}`, obj, {
       headers: {
         "x-access-token": localStorage.getItem("token"),
       },
@@ -64,7 +64,7 @@ export default function UserMoreMenu({id, name,email,role,getdata}) {
 
   const handelDelete = ()=>{
     axios
-    .delete(`http://137.184.157.109:8080/${id}`, {
+    .delete(`/${id}`, {
       headers: {
         "x-access-token": localStorage.getItem("token"),
       },

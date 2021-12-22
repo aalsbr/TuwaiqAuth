@@ -58,7 +58,7 @@ const Contact = () => {
   
 
     axios
-      .post("http://137.184.157.109:8080/orders", obj)
+      .post("/orders", obj)
       .then((response) => {
         console.log(response.data)
        setCompanyName("")

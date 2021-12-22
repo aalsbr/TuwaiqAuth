@@ -39,7 +39,7 @@ export default function RegisterPublic() {
   const { id } = useParams();
 
   useEffect(() => {
-    axios.get("http://137.184.157.109:8080/orders/getallcompany").then((response) => {
+    axios.get("/orders/getallcompany").then((response) => {
       let obj = response.data.data.find((o) => o.company === id);
       if (obj) setPage(false);
       setLoading(false);

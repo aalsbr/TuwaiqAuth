@@ -43,7 +43,7 @@ export default function LoginForm() {
 
       
     console.log(obj)
-    axios.post("http://137.184.157.109/:8080/login",obj).then((res) => {
+    axios.post("/login",obj).then((res) => {
 
         if(res.data.data){
             localStorage.setItem("token",res.data.data)

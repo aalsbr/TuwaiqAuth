@@ -41,7 +41,7 @@ export default function AppCurrentVisits() {
   
   const getdata  = ()=>{
 
-    axios.get("http://137.184.157.109:8080/orders/numberdone",{
+    axios.get("/orders/numberdone",{
       headers: {
         "x-access-token": localStorage.getItem("token"),
       }

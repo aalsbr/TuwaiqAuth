@@ -29,7 +29,7 @@ export default function OrderMenue({id,getdata,company,email}) {
     }
 
   axios
-    .put(`http://137.184.157.109orders/mark/${id}`,{status:"done"} , {
+    .put(`/orders/mark/${id}`,{status:"done"} , {
       headers: {
         "x-access-token": localStorage.getItem("token"),
       },
@@ -37,7 +37,7 @@ export default function OrderMenue({id,getdata,company,email}) {
     .then((response) => {
       
       axios
-      .post(`http://137.184.157.109:8080/orders/company`, obj , {
+      .post(`/orders/company`, obj , {
         headers: {
           "x-access-token": localStorage.getItem("token"),
         },

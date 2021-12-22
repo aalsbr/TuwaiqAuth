@@ -45,7 +45,7 @@ export default function LoginPublic() {
 
   useEffect(()=>{
     axios
-    .get("http://137.184.157.109:8080/orders/getallcompany")
+    .get("/orders/getallcompany")
     .then((response) => {
       let obj =   response.data.data.find(o => o.company === id);
       if(obj) setPage(false)

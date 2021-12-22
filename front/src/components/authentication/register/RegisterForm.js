@@ -42,7 +42,7 @@ export default function RegisterForm() {
         password: formik.values.password,
       };
       axios
-        .post("http://137.184.157.109:8080/", obj)
+        .post("/", obj)
         .then((response) => {
           console.log(response);
           if (response.data.status === "ok") {
