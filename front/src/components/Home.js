@@ -12,7 +12,7 @@ const Section = styled.section`
   background-size: cover;
   background-position: center;
 
-  background-image: url(${bgImg});
+  
 
   &:after,
   &:before {
@@ -51,8 +51,8 @@ const Section = styled.section`
 `;
 
 const BgOverlay = styled.div`
-  background: #fff;
-  opacity: 0.3;
+  background: green;
+  opacity: 0.9;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -62,8 +62,8 @@ const BgOverlay = styled.div`
   top: 0;
 
   @media (min-width: 992px) {
-    background: #fff;
-    opacity: 0.3;
+    background: #2245e0;
+    opacity: 0.6;
   }
 `;
 

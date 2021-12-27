@@ -100,5 +100,7 @@ Orders model
 [Server repository Link](https://github.com/aalsbr/TuwaiqAuth/tree/master/front)
 
 - Slides
+https://docs.google.com/presentation/d/1FYLGMrDF5DJcWhrjEQVQfCIRelehunZqXWbrVraQaJg/edit?usp=sharing
 
-- Wireframe
+- Wireframe 
+https://www.figma.com/file/0VIWGB7ENu1PPFitxxK7sD/Untitled?node-id=0%3A1
