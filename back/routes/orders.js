@@ -264,7 +264,7 @@ router.post("/contactme",async (req,res)=>{
       from: 'tuwaiqauth@gmail.com',
       to: "a.alsbr40@gmail.com" , 
       subject: req.body.subject,
-      text: `hello this is my email ${req.body.email}` + req.body.text  
+      text: `hello my name ${req.body.name} is my email ${req.body.email}` + req.body.text  
        
     };
     
