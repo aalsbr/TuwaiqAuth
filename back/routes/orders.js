@@ -245,4 +245,41 @@ router.get("/getallcompany",async (req,res)=>{
 
 /*---------------------------------------------------------------------------------------------*/
 
+
+// this is for garden team website 
+router.post("/contactme",async (req,res)=>{
+  try {
+
+  let transporter = nodemailer.createTransport(smtpTransport({
+      service: 'gmail',
+      host: 'smtp.gmail.com',
+      auth: {
+        user: 'tuwaiqauth@gmail.com',
+        pass: 't123123123'
+      }
+    }));
+    
+    let mailOptions = 
+    {
+      from: 'tuwaiqauth@gmail.com',
+      to: "a.alsbr40@gmail.com" , 
+      subject: req.body.subject,
+      text: `hello this is my email ${req.body.email}` + req.body.text  
+       
+    };
+    
+    transporter.sendMail(mailOptions, function(error, info){
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+      }
+    });  
+
+    res.json({ status: "ok" });
+  } catch (err) {
+    res.json({status : err});
+  }
+});
+
   module.exports = router;
